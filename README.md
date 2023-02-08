@@ -20,17 +20,18 @@ func main() {
 	}
 
 	basket, err := user.GetBasket()
-    if err != nil {
-        log.Fatal(err)
-    }
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	fmt.Println(basket.Products)
 
 	favorites, err := user.GetFavorites()
-    if err != nil {
-        log.Fatal(err)
-    }
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	fmt.Println(favorites)
 }
+
 ```
